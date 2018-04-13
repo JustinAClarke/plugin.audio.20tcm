@@ -1,4 +1,4 @@
 # CHANGELOG
 
-## V1
+## V1.0.0
 Initial Version
