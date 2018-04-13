@@ -14,36 +14,18 @@ def build_url(query):
     
 def build_song_list():
     '''
-    Vision      128k    http://tx.sharp-stream.com/icecast.php?i=ucbau.aac
-    Vision      64k     http://tx.sharp-stream.com/icecast.php?i=ucbau.mp3
-    Vision180   128k    http://tx.sharp-stream.com/http_live.php?i=vision180.aac
-    Vision180   64k     http://tx.sharp-stream.com/http_live.php?i=vision180.mp3
+http://ice10.securenetsystems.net/media/20TCM/ondemand/currentcountdown.m4a
+http://ice10.securenetsystems.net/media/20TCM/ondemand/Top20ChrisTomlinSongs.m4a
+http://ice10.securenetsystems.net/media/20TCM/ondemand/RichMullins20YearsLater.m4a
     '''
     song_list = []
     #vision
-    li = xbmcgui.ListItem(label='Vision Christian Radio 128k',thumbnailImage='https://vision.org.au/wp-content/themes/visionmedia/images/vision-logo.png')
+    li = xbmcgui.ListItem(label='20 The Countdown Magazine',thumbnailImage='http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
     li.setProperty('IsPlayable', 'true')
-    li.setProperty('fanart_image', 'https://vision.org.au/wp-content/themes/visionmedia/images/vision-logo.png')
-    url = build_url({'mode': 'stream', 'url': 'http://tx.sharp-stream.com/icecast.php?i=ucbau.aac', 'title': 'Vision Christian Radio 128k'})
+    li.setProperty('fanart_image', 'http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
+    url = build_url({'mode': 'stream', 'url': 'http://ice10.securenetsystems.net/media/20TCM/ondemand/currentcountdown.m4a', 'title': '20 The Countdown Magazine'})
     song_list.append((url, li, False))
-    li = xbmcgui.ListItem(label='Vision Christian Radio 64k',thumbnailImage='https://vision.org.au/wp-content/themes/visionmedia/images/vision-logo.png')
-    li.setProperty('IsPlayable', 'true')
-    li.setProperty('fanart_image', 'https://vision.org.au/wp-content/themes/visionmedia/images/vision-logo.png')
-    url = build_url({'mode': 'stream', 'url': 'http://tx.sharp-stream.com/icecast.php?i=ucbau.mp3', 'title': 'Vision Christian Radio 64k'})
-    song_list.append((url, li, False))
-    
-    #vision180
-    li = xbmcgui.ListItem(label='Vision180 Radio 128k',thumbnailImage='http://vision180.org.au/wp-content/themes/vision180/images/vision-logo.png')
-    li.setProperty('IsPlayable', 'true')
-    li.setProperty('fanart_image', 'http://vision180.org.au/wp-content/themes/vision180/images/vision-logo.png')
-    url = build_url({'mode': 'stream', 'url': 'http://tx.sharp-stream.com/http_live.php?i=vision180.aac', 'title': 'Vision180 Radio 128k'})
-    song_list.append((url, li, False))
-    li = xbmcgui.ListItem(label='Vision180 Radio 64k',thumbnailImage='http://vision180.org.au/wp-content/themes/vision180/images/vision-logo.png')
-    li.setProperty('IsPlayable', 'true')
-    li.setProperty('fanart_image', 'http://vision180.org.au/wp-content/themes/vision180/images/vision-logo.png')
-    url = build_url({'mode': 'stream', 'url': 'http://tx.sharp-stream.com/http_live.php?i=vision180.mp3', 'title': 'Vision180 Radio 64k'})
-    song_list.append((url, li, False))
-    
+
     '''
     song_list = []
     # iterate over the contents of the dictionary songs to build the list

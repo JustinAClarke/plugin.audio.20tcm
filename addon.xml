@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.vision" name="Vision Christian Radio (Unofficial)" version="1.0.1" provider-name="JustinFuhrmeister-Clarke">
+<addon id="plugin.audio.20TCM" name="20 The Countdown (Unofficial)" version="1.0.0" provider-name="JustinFuhrmeister-Clarke">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
     </requires>
@@ -7,9 +7,9 @@
         <provides>audio</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">https://github.com/JustinFuhrmeister-Clarke/plugin.audio.vision</summary>
+        <summary lang="en">https://github.com/JustinFuhrmeister-Clarke/plugin.audio.20TCM</summary>
         <license>GNU General Public License, v2</license>
-        <description lang="en">Add-on to stream audio from Vision Christian Radio</description>
+        <description lang="en">Add-on to stream audio from 20 The Countdown Magazine</description>
         <platform>all</platform>
     </extension>
 </addon>

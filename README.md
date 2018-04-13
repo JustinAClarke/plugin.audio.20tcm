@@ -1,10 +1,10 @@
-# (Unofficial) [Vision Christian Radio](https://vision.org.au) and [Vision180 Radio](https://vision180.org.au) Kodi Plugin
+# (Unofficial) [20 The Countdown Magazine](http://20thecountdownmagazine.com/) Kodi Plugin
 
 #### Usage
-Go to the below links to listen to the stream on fm/am, satelite, or web stream.
+Go to the below link to listen to find a station that shares the stream, or web stream.
 
-[Vision Christian Radio](https://vision.org.au/radio/)
-[Vision180 Radio](http://vision180.org.au/listening-options/)
+[20 The Countdown Magazine](http://20thecountdownmagazine.com/)
+
 
 Or follow the below steps to install this awesome plugin for Kodi to stream to your home media system.
 
@@ -21,7 +21,7 @@ Go to:
  * Unknown sources
 
 #### Download Plugin 
- * [Lastest Release](https://github.com/JustinFuhrmeister-Clarke/plugin.audio.vision/releases)
+ * [Lastest Release](https://github.com/JustinFuhrmeister-Clarke/plugin.audio.20TCM/releases)
 
 #### Install Plugin
  * Add-ons - Install (Box top left corder)
@@ -30,6 +30,6 @@ Go to:
 
 
 ### Support
-If you have found a bug, feel free to [open a new Issue on GitHub](https://github.com/JustinFuhrmeister-Clarke/plugin.audio.vision/issues).
+If you have found a bug, feel free to [open a new Issue on GitHub](https://github.com/JustinFuhrmeister-Clarke/plugin.audio.20TCM/issues).
 
 Currently in BETA, if there are issues please let me know
