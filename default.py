@@ -19,29 +19,28 @@ http://ice10.securenetsystems.net/media/20TCM/ondemand/Top20ChrisTomlinSongs.m4a
 http://ice10.securenetsystems.net/media/20TCM/ondemand/RichMullins20YearsLater.m4a
     '''
     song_list = []
-    #vision
+    #20TCM
     li = xbmcgui.ListItem(label='20 The Countdown Magazine',thumbnailImage='http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
     li.setProperty('IsPlayable', 'true')
     li.setProperty('fanart_image', 'http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
     url = build_url({'mode': 'stream', 'url': 'http://ice10.securenetsystems.net/media/20TCM/ondemand/currentcountdown.m4a', 'title': '20 The Countdown Magazine'})
     song_list.append((url, li, False))
 
-    '''
-    song_list = []
-    # iterate over the contents of the dictionary songs to build the list
-    for song in songs:
-        # create a list item using the song filename for the label
-        li = xbmcgui.ListItem(label=songs[song]['title'], thumbnailImage=songs[song]['album_cover'])
-        # set the fanart to the albumc cover
-        li.setProperty('fanart_image', songs[song]['album_cover'])
-        # set the list item to playable
-        li.setProperty('IsPlayable', 'true')
-        # build the plugin url for Kodi
-        # Example: plugin://plugin.audio.example/?url=http%3A%2F%2Fwww.theaudiodb.com%2Ftestfiles%2F01-pablo_perez-your_ad_here.mp3&mode=stream&title=01-pablo_perez-your_ad_here.mp3
-        url = build_url({'mode': 'stream', 'url': songs[song]['url'], 'title': songs[song]['title']})
-        # add the current list item to a list
-        song_list.append((url, li, False))
-    '''
+
+    #Top20ChrisTomlinSongs
+    li = xbmcgui.ListItem(label='Top 20 Chris Tomlin Worship Songs',thumbnailImage='http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
+    li.setProperty('IsPlayable', 'true')
+    li.setProperty('fanart_image', 'http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
+    url = build_url({'mode': 'stream', 'url': 'http://ice10.securenetsystems.net/media/20TCM/ondemand/Top20ChrisTomlinSongs.m4a', 'title': 'Top 20 Chris Tomlin Worship Songs'})
+    song_list.append((url, li, False))
+    
+    #RichMullins20YearsLater
+    li = xbmcgui.ListItem(label='Rich Mullins Tribute 20 Years Later',thumbnailImage='http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
+    li.setProperty('IsPlayable', 'true')
+    li.setProperty('fanart_image', 'http://cdnrf.securenetsystems.net/file_radio/stations_large/20TCM/v5/logo.png')
+    url = build_url({'mode': 'stream', 'url': 'http://ice10.securenetsystems.net/media/20TCM/ondemand/RichMullins20YearsLater.m4a', 'title': 'Rich Mullins Tribute 20 Years Later'})
+    song_list.append((url, li, False))
+
     # add list to Kodi per Martijn
     # http://forum.kodi.tv/showthread.php?tid=209948&pid=2094170#pid2094170
     xbmcplugin.addDirectoryItems(addon_handle, song_list, len(song_list))
